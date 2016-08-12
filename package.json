@@ -1,4 +1,23 @@
 {
   "main": "index.py",
-  "engine": "python3"
+  "engine": "python3",
+  "name": "rinobot-heatmap",
+  "description": "Makes a simple heatmap of a grid of data.",
+  "version": "0.0.2",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinocloud/rinobot-heatmap.git"
+  },
+  "author": "eoin murray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rinocloud/rinobot-heatmap/issues"
+  },
+  "homepage": "https://github.com/rinocloud/rinobot-heatmap#readme"
 }
