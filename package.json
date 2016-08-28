@@ -1,9 +1,9 @@
 {
   "main": "index.py",
   "engine": "python3",
-  "name": "rinobot-heatmap",
+  "name": "rinobot-plugin-interactive-heatmap",
   "description": "Makes a simple heatmap of a grid of data.",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "directories": {
     "example": "examples"
   },
