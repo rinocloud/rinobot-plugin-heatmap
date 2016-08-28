@@ -1,15 +1,9 @@
 {
   "main": "index.py",
   "engine": "python3",
-  "name": "rinobot-plugin-interactive-heatmap",
+  "name": "rinobot-plugin-heatmap",
   "description": "Makes a simple heatmap of a grid of data.",
-  "version": "0.0.2",
-  "directories": {
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rinocloud/rinobot-heatmap.git"
