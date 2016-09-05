@@ -4,18 +4,11 @@
   "name": "rinobot-plugin-heatmap",
   "description": "Makes a simple heatmap of a grid of data.",
   "version": "0.0.4",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rinocloud/rinobot-heatmap.git"
-  },
+  "author": "eoin murray",
+  "license": "MIT",
+  "repository": "https://github.com/rinocloud/rinobot-plugin-heatmap.git",
   "keywords": [
     "rinobot",
     "rinocloud"
-  ],
-  "author": "eoin murray",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rinocloud/rinobot-heatmap/issues"
-  },
-  "homepage": "https://github.com/rinocloud/rinobot-heatmap#readme"
+  ]
 }
