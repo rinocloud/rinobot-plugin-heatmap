@@ -1,33 +1,21 @@
-import sys
-import os
+import rinobot_plugin as bot
 import numpy as np
-import warnings
 import matplotlib
 import matplotlib.pyplot as plt
 
-output_file_type = '.png'
 matplotlib.rcParams['savefig.dpi'] = 2 * matplotlib.rcParams['savefig.dpi']
 
-def load(fpath, skiprows=0):
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        try:
-            return np.loadtxt(fpath, skiprows=skiprows)
-        except ValueError:
-            return load(fpath, skiprows+1)
-        except StopIteration:
-            return []
+def main():
+    filepath = bot.filepath()
+    data = bot.loadfile(filepath)
 
-def main(filepath):
-    filename_without_ext = os.path.splitext(filepath)[0]
-    data = load(filepath)
+    index = bot.index_from_args(data)
 
-    if len(data) == 0:
-        print("No data numeric data could be parsed from %s" % filepath)
-        return
+    plt.imshow(data[index], extent=[0, 100, 0, 1], aspect='auto')
+    outname = bot.no_extension() + '-heatmap.png'
+    outpath = bot.output_filepath(outname)
 
-    plt.imshow(data, extent=[0, 100, 0, 1], aspect='auto')
-    plt.savefig(filename_without_ext + output_file_type)
+    plt.savefig(outpath)
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()
