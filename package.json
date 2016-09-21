@@ -7,7 +7,17 @@
   "author": "eoin murray",
   "license": "MIT",
   "scripts": {
-    "postinstall": "pip install rinobot_plugin --upgrade"
+    "postinstall": "pip install rinobot-plugin --upgrade"
+  },
+  "options": {
+    "cols": {
+      "type": "string",
+      "description": "Specify which columns to operate on."
+    },
+    "rows": {
+      "type": "string",
+      "description": "Specify which row to operate on."
+    }
   },
   "repository": "https://github.com/rinocloud/rinobot-plugin-heatmap.git",
   "keywords": [
