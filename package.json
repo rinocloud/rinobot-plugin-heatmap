@@ -3,7 +3,7 @@
   "engine": "python3",
   "name": "rinobot-plugin-heatmap",
   "description": "Makes a simple heatmap of a grid of data.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "eoin murray",
   "license": "MIT",
   "scripts": {
