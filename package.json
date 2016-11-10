@@ -17,6 +17,14 @@
     "rows": {
       "type": "string",
       "description": "Specify which row to operate on."
+    },
+    "xlabel": {
+      "type": "string",
+      "description": "The label for the x axis"
+    },
+    "ylabel": {
+      "type": "string",
+      "description": "The label for the y axis"
     }
   },
   "repository": "https://github.com/rinocloud/rinobot-plugin-heatmap.git",

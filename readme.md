@@ -1,15 +1,9 @@
 # rinobot-heatmap
 
+<img src="examples/data.-heatmap.png" width="600">
+
+
 Makes a simple heatmap of a grid of data.
-
-## Installation
-
-Just download the zip of the package and unzip into your `rinobot-packages` folder.
-
-> [Download rinobot-heatmap.zip](https://github.com/rinocloud/rinobot-heatmap/archive/master.zip)
-
-- On Windows your `rinobot-packages` folder is in `My Documents`.
-- On Mac your `rinobot-packages` folder is in `Documents`.
 
 ## Example
 
@@ -25,6 +19,13 @@ If your data looks like
 ...
 ```
 
-If will generate a graph like
+If will generate a heatmap.
 
-<img src="examples/data.png" width="600">
+## Options:
+
+In the extra args section of the rinobot automation config you can set the following parameters
+
+- cols: the columns to work on (see [Selecting columns and rows of data](https://docs.rinocloud.com/rinocloud-desktop/slicing_data.html))
+- rows: the rows to work on
+- xlabel: the label for the x axis
+- ylabel: the label for the y axis
